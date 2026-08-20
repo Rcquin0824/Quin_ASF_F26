@@ -1,0 +1,3 @@
+INSERT INTO security_logs_normalized (event_time, username, user_role, account_status, ip_address, port_number, device_type, operating_system, browser_name, location_city, location_region, location_country, event_type, event_category, action_taken, status, severity, resource_type, resource_name, session_id, failure_reason, risk_score, watchlist_flag, notes)
+SELECT event_time, username, user_role, account_status, ip_address, port_number, device_type, operating_system, browser_name, location_city, location_region, location_country, event_type, event_category, action_taken, status, severity, resource_type, resource_name, session_id, failure_reason, risk_score, watchlist_flag, notes
+FROM security_logs_raw;
