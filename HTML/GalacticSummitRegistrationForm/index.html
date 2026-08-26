@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The NEW Alliance</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mb-3{
+          border-block: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+
+<form action="/api/newalliancepost" method="post">
+    <div class="mb-3">
+        <label for="repName" style="border: black"><h2>Representative Name:</h2></label>
+        <input type="text" style="width: 400px;" id= "repName" name="representative_name" placeholder="e.g., Commander Skywalker"
+               required>
+    </div>
+    <br>
+
+    <div class="md-3">
+        <label for="galacticComm"><h2>Galatic communications:</h2></label>
+        <input type="text" style="width: 400px;" id="galacticComm" name="galatic_communications"
+               placeholder="Enter assigned unique transmission code" maxlength="100"
+               required>
+    </div>
+    <br>
+
+    <div class="mb-3">
+        <label for="crewSize"><h2>Crew Size Attending:</h2></label>
+        <input type="number" id="crewSize" name="crew_size_attending" min="1" max="8" step="1"
+               required>
+        <br>
+        <label>Max allowed 8.</label>
+    </div>
+    <br>
+
+    <div class="mb-3">
+        <label for="allianceSelect"><h2>Alliance</h2></label>
+        <select name="alliance_name" id="allianceSelect" required>
+            <option value="" displayed selected>-- Please select an option --</option>
+            <option value="starwars">Star Wars</option>
+            <option value="startrek">Star Trek</option>
+            <option value="snacks">Snacks</option>
+        </select>
+    </div>
+    <br>
+  <p><h2>Do you have any updates?</h2></p>
+    <div class="mb-3">
+        <label for="updateYes">Yes</label>
+        <input type="radio" id="updateYes" name="summitUpdates" value="true">
+        <br>
+
+        <label for="updateNo">No</label>
+        <input type="radio" id="updateNo" name="summitUpdates" value="false">
+        <br>
+    </div>
+    <br>
+
+    <div>
+        <button type="submit">Submit Mission Data</button>
+        <button type="reset">Clear Form</button>
+    </div>
+</form>
+
+
+
+</body>
+</html>
