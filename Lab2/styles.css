@@ -1,0 +1,54 @@
+
+:root{
+    --brand-dark: #1f1a17;
+    --accent: #b08b4f;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #faf7f5;
+    color: #222;
+}
+
+.navbar-brand .logo{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Cards */
+.card-title {
+    font-weight: 600;
+}
+
+/* Slight decorative accent */
+footer {
+    border-top: 4px solid var(--accent);
+}
+
+/* Small responsive spacing tweaks */
+@media (max-width: 576px){
+    .navbar-brand span { font-size: 0.95rem; }
+}
+
+.menu-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #2b241f;
+    overflow: hidden;
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+}
+.menu-image-wrapper img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform-origin: center;
+    transition: opacity .35s ease;
+    opacity: 0;
+}
+.menu-image-wrapper img.loaded { opacity: 1; }
