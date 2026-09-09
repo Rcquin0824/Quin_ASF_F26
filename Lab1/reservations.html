@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steampunk Bulldog Bento bar</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logo.png" alt="Logo" class="logo me-2">
+      <span>Steampunk Bulldog</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link active" href="reservations.html">Reservations</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <header class="mb-4">
+    <h1>Make a Reservation</h1>
+    <p class="text-muted">Clear validation and immediate feedback — handled with JavaScript for consistent behavior across devices.</p>
+  </header>
+
+  <!-- Alerts inserted here by script.js -->
+  <div id="reservationAlertArea" class="mb-3"></div>
+
+  <form id="reservationForm" novalidate>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-control" type="text" maxlength="20" placeholder="Full name">
+        <div class="form-text">Max 20 characters.</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-control" type="email" placeholder="you@example.com">
+      </div>
+
+      <div class="col-md-4">
+        <label for="partySize" class="form-label">Party size</label>
+        <select id="partySize" name="partySize" class="form-select">
+          <option value="">Select...</option>
+          <option>1</option><option>2</option><option>3</option><option>4</option>
+          <option>5</option><option>6</option><option>7</option><option>8</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="date" class="form-label">Date</label>
+        <input id="date" name="date" class="form-control" type="date">
+      </div>
+
+      <div class="col-md-4">
+        <label for="time" class="form-label">Time</label>
+        <input id="time" name="time" class="form-control" type="time">
+      </div>
+
+      <div class="col-12">
+        <fieldset>
+          <legend class="col-form-label pt-0">Seating preference</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="seating" id="inside" value="Inside">
+            <label class="form-check-label" for="inside">Inside</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="seating" id="outside" value="Outside">
+            <label class="form-check-label" for="outside">Outside</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="seating" id="window" value="Window">
+            <label class="form-check-label" for="window">Window</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="col-md-8">
+        <label for="dietaryNotes" class="form-label">Dietary notes</label>
+        <input id="dietaryNotes" name="dietaryNotes" class="form-control" type="text" maxlength="30" placeholder="Any allergies or restrictions (optional)">
+        <div class="form-text">Optional — Max 30 characters.</div>
+      </div>
+
+      <div class="col-md-4 d-flex align-items-center">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter" value="yes">
+          <label class="form-check-label" for="newsletter">Sign up for newsletter</label>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex gap-2">
+        <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+        <button id="resetBtn" type="reset" class="btn btn-outline-secondary">Reset</button>
+      </div>
+    </div>
+  </form>
+</main>
+
+<footer class="bg-dark text-light py-3">
+  <div class="container text-center small">
+    © Steampunk Bulldog Bento Bar
+  </div>
+</footer>
+
+</body>
+</html>
