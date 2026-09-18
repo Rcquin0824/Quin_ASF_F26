@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Menu | Steampunk Bulldog Bento Bar</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet"
+        href="styles.css">
+</head>
+
+<body class="menu-page">
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logo.png" alt="Steampunk Bulldog logo" class="logo me-2">
+      Steampunk Bulldog
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-label="Open navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavigation">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservations.html">Reservations</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container page-content">
+  <section class="content-panel">
+    <p class="eyebrow">Fresh from the steam kitchen</p>
+    <h1>Our Menu</h1>
+
+    <label for="categoryFilter" class="form-label">Filter by category</label>
+    <select id="categoryFilter" class="form-select mb-4">
+
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+    </select>
+
+    <div id="menuCarousel" class="menu-card">
+      <img id="menuImage" src="images/Logo.png"
+           alt="Menu item" class="menu-image">
+
+      <div class="menu-details">
+        <p id="menuCategory" class="eyebrow"></p>
+        <h2 id="menuName">Loading menu...</h2>
+        <p id="menuDescription"></p>
+        <p id="menuPrice" class="price"></p>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+      <button id="prevButton" class="btn btn-secondary">PREV</button>
+      <button id="nextButton" class="btn btn-primary">NEXT</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container text-center">
+    <p class="mb-0">© 2026 Steampunk Bulldog Bento Bar</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

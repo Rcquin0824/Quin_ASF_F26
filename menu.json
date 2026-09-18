@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Copper Sunrise Bento",
+    "description": "Miso eggs, roasted vegetables, rice, and steam-braised tofu.",
+    "price": 9.5,
+    "category": "Breakfast",
+    "img": "images/menu-1.png"
+  },
+  {
+    "name": "Dawnlight Danish",
+    "description": "Fluffy pancakes with cloudberry syrup and brass-roasted nuts.",
+    "price": 8.75,
+    "category": "Breakfast",
+    "img": "images/Dawnlight Danish.png"
+  },
+  {
+    "name": "Patrol Officer Porridge",
+    "description": "Savory potatoes, eggs, herbs, and crispy mechanical mushroom bites.",
+    "price": 10.25,
+    "category": "Breakfast",
+    "img": "images/Patrol Officer Porridge.png"
+  },
+  {
+    "name": "Bulldog Teriyaki Bento",
+    "description": "Teriyaki chicken, steamed rice, greens, and pickled vegetables.",
+    "price": 13.5,
+    "category": "Lunch",
+    "img": "images/Mechanic's Miso Bento.png"
+  },
+  {
+    "name": "Steam Dock Noodle Bowl",
+    "description": "Hand-pulled noodles with vegetables, broth, and soy-glazed protein.",
+    "price": 12.75,
+    "category": "Lunch",
+    "img": "images/Night Shift Noodles.png"
+  },
+  {
+    "name": "Engineer’s Curry Box",
+    "description": "A hearty vegetable curry served with rice and a crispy side.",
+    "price": 14,
+    "category": "Lunch",
+    "img": "images/landingPageexample.png"
+  },
+  {
+    "name": "Brass Gear Steak Bento",
+    "description": "Seared steak, garlic rice, roasted carrots, and pepper sauce.",
+    "price": 18.5,
+    "category": "Dinner",
+    "img": "images/landingPageExample3.png"
+  },
+  {
+    "name": "Midnight Miso Bowl",
+    "description": "Miso broth, noodles, mushrooms, greens, and smoky tofu.",
+    "price": 15.25,
+    "category": "Dinner",
+    "img": "images/Gear-Griddle Bento.png"
+  },
+  {
+    "name": "Captain’s Bento Feast",
+    "description": "A large meal with grilled protein, rice, vegetables, and three sides.",
+    "price": 21,
+    "category": "Dinner",
+    "img": "images/landingPageexample.png"
+  },
+  {
+    "name": "Golden Gear Dumplings",
+    "description": "Crispy vegetable dumplings served with ginger dipping sauce.",
+    "price": 11.5,
+    "category": "Dinner",
+    "img": "images/landingPageExample3.png"
+  }
+]
