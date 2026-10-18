@@ -1,0 +1,320 @@
+/* ---------- Theme ---------- */
+:root {
+    --ink: #211813;
+    --ink-light: #38291f;
+    --parchment: #f3e8d2;
+    --parchment-dark: #e4d1ae;
+    --brass: #bd8b3d;
+    --brass-light: #dfb760;
+    --rust: #8a3f27;
+    --muted: #76685a;
+    --border: rgba(93, 61, 35, 0.25);
+    --shadow: 0 8px 24px rgba(31, 20, 13, 0.16);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    position: relative;
+    z-index: 10;
+    background: var(--ink) !important;
+    border-bottom: 3px solid var(--brass);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    min-height: 76px;
+}
+
+.navbar-brand {
+    color: var(--brass-light) !important;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.navbar .nav-link {
+    color: var(--parchment) !important;
+    padding: 0.65rem 0.8rem;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--brass-light) !important;
+}
+
+.navbar-logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* ---------- Shared sections ---------- */
+.page-section {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 3.5rem 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--ink);
+    line-height: 1.2;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--rust);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    display: grid;
+    min-height: 460px;
+    place-items: center;
+    padding: 4rem 1.5rem;
+    color: var(--parchment);
+    text-align: center;
+    background:
+            linear-gradient(rgba(25, 17, 12, 0.58), rgba(25, 17, 12, 0.72)),
+            url("/images/steampunk-background.jpg") center / cover no-repeat;
+    border-bottom: 5px solid var(--brass);
+}
+
+.hero-content {
+    width: min(760px, 100%);
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+    color: var(--brass-light);
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    text-shadow: 2px 3px 8px #000;
+}
+
+.hero p {
+    max-width: 620px;
+    margin: 0 auto 1.75rem;
+    font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+}
+
+/* ---------- Buttons ---------- */
+.btn,
+button {
+    border-radius: 4px;
+}
+
+.btn-steam,
+button.btn-steam {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid var(--brass-light);
+    background: var(--rust);
+    color: #fff8e9;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-steam:hover,
+button.btn-steam:hover {
+    transform: translateY(-2px);
+    background: #6f301e;
+    color: #fff;
+}
+
+/* ---------- Menu cards ---------- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.4rem;
+}
+
+.menu-card,
+.card {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #fffaf0;
+    box-shadow: var(--shadow);
+}
+
+.menu-card img,
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.menu-card-body,
+.card-body {
+    padding: 1.2rem;
+}
+
+.menu-card h3,
+.card-title {
+    margin: 0 0 0.5rem;
+    color: var(--rust);
+}
+
+.menu-card p,
+.card-text {
+    color: var(--muted);
+}
+
+.menu-price {
+    color: var(--ink);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+/* ---------- Forms ---------- */
+.reservation-form {
+    width: min(680px, 100%);
+    margin: 0 auto;
+    padding: clamp(1.2rem, 4vw, 2rem);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--brass);
+    border-radius: 8px;
+    background: #fffaf0;
+    box-shadow: var(--shadow);
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 700;
+}
+
+.reservation-form .form-control,
+.reservation-form .form-select {
+    min-height: 44px;
+    border: 1px solid #b6a58c;
+    border-radius: 4px;
+    background-color: #fffdf7;
+}
+
+.reservation-form .form-control:focus,
+.reservation-form .form-select:focus {
+    border-color: var(--brass);
+    box-shadow: 0 0 0 0.2rem rgba(189, 139, 61, 0.2);
+}
+
+.field-error {
+    margin-top: 0.25rem;
+    color: #a12e24;
+    font-size: 0.9rem;
+}
+
+/* ---------- Cart ---------- */
+.cart-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fffaf0;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-total {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--brass);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    padding: 2rem 1rem;
+    border-top: 3px solid var(--brass);
+    background: var(--ink);
+    color: var(--parchment);
+    text-align: center;
+}
+
+.site-footer a {
+    color: var(--brass-light);
+}
+
+.site-footer p {
+    margin: 0.35rem 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 767px) {
+    .navbar-layout {
+        flex-wrap: wrap;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero {
+        min-height: 360px;
+    }
+
+    .cart-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cart-total {
+        text-align: left;
+    }
+}
+
